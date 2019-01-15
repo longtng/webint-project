@@ -9,17 +9,10 @@
     <div class="content">
    </div>
    
-       <main>
-      <aside class="sidebar">
+   <main class="content">
+	<router-view></router-view>
+	</main>
 
-      </aside>
-      <div class="content">
-        <router-view></router-view>
-      </div>
-    </main>
-    <footer>
-    <p>Copyright 2019</p>
-	</footer>
  </div>
 </div>
 
@@ -116,6 +109,10 @@ footer {
 }
 footer p {
   margin-left:10px; 
+}
+
+main {
+    padding: 30px;
 }
 
 

@@ -11,11 +11,15 @@ new Vue({
 
 import Vue from 'vue'
 import Router from 'vue-router'
+import VueCarousel from 'vue-carousel';
+
 import App from './App.vue'
 import Home from './components/Home.vue'
 import ProfileSetup from './components/ProfileSetup.vue'
 import Recipe from './components/Recipe.vue'
 
+
+Vue.use(VueCarousel);
 Vue.use(Router)
 
 const router = new Router({
