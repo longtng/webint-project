@@ -7,25 +7,23 @@
       </div>
     </header>
     <div class="content">
-
-      <video-controls @change-video-source="play"
-                      @controls="changeControls"
-                      @change-offset="changeOffset"
-                      @video-rotate="videoRotate"></video-controls>
-      <br>
-      <div class="row center">
-       <video-child :video="currentVideo"
-                    @video-ended="playNextVideo"
-                    @video-error="videoError"
-                    :displayButtons="displayButtons"
-                    :offset="offset" ref="videoComponent"></video-child>&nbsp; &nbsp; 
-     <video-list :list="videos" :activeIndex="currentIndex" @click-video="clickVideo"></video-list>
    </div>
+   
+       <main>
+      <aside class="sidebar">
+
+      </aside>
+      <div class="content">
+        <router-view></router-view>
+      </div>
+    </main>
     <footer>
-    <p>Copyright 2019 Barboza Silvana</p>
-  </footer>
+    <p>Copyright 2019</p>
+	</footer>
  </div>
 </div>
+
+  </div>
 </template>
 
 <script>
@@ -40,58 +38,13 @@ export default {
     VideoList,
     VideoControls
   },
-  // https://vuejs.org/2016/02/06/common-gotchas/#Why-does-data-need-to-be-a-function
   data: () => ({
-    currentIndex: 0,
-    currentTitle: "",
-    videoURL: "",
-    displayButtons: true,
-    offset: null,
-  	videos: [
-  	"https://ia800301.us.archive.org/0/items/electricsheep-flock-244-32500-3/00244%3D32593%3D23650%3D23640_512kb.mp4",
-  	"https://ia800301.us.archive.org/0/items/electricsheep-flock-244-32500-3/00244%3D32653%3D22927%3D23015_512kb.mp4",
-  	"https://ia600301.us.archive.org/0/items/electricsheep-flock-244-32500-3/00244%3D32673%3D23037%3D23015_512kb.mp4",
-  	"https://ia800301.us.archive.org/0/items/electricsheep-flock-244-32500-3/00244%3D32693%3D32693%3D32693_512kb.mp4",
-  	]
+   
   }),
   computed: {
-	currentVideo: function (){
-	   if(this.videoURL){
-      return this.videoURL;
-     }else{
-      if(this.currentIndex < this.videos.length){
-        return this.videos[this.currentIndex];
-      }else{
-        return {};
-      }
-     }
-	
-    }
   },
   methods: {
-  	playNextVideo (){
-      if(this.currentIndex < this.videos.length - 1){
-        this.currentIndex +=1;
-        this.currentTitle = "Video " + (this.currentIndex + 1);
-        }
-  	},
-    play (url){
-      this.videoURL = url;
-      this.currentIndex = -1;
-    },
-    changeControls(c){
-      this.displayButtons = c;
-    },
-    changeOffset(offset){
-      this.$refs.videoComponent.setOffset(offset);
-    },
-    videoRotate(){
-      this.$refs.videoComponent.rotate();
-    },
-    clickVideo(index){
-      this.currentIndex = index;
-      this.videoURL = null;
-    }
+
   }
  
 }
