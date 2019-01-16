@@ -3,6 +3,9 @@
     <h2>
       Recipe
     </h2>
+
+    <router-link to="/recipe">Go to Recipe</router-link><br>
+    <router-link to="/profile">Go to Profile</router-link>
 	<search-bar></search-bar>
     <carousel :per-page="1">
 		<slide>

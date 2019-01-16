@@ -25,12 +25,12 @@ Vue.use(Router)
 const router = new Router({
  routes: [
    {
-     path: '/home',
+     path: '/',
      name:'home',
      component: Home,
    },
    {
-     path: '/',
+     path: '/profile',
      name:'profile',
      component: ProfileSetup,
    },
