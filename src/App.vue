@@ -21,13 +21,15 @@
 import VideoChild from './components/VideoChild.vue';
 import VideoList from './components/VideoList.vue';
 import VideoControls from './components/Controls.vue';
+import ProfileSetup from './components/ProfileSetup.vue';
 
 export default {
   name: 'app',
   components: {
     VideoChild,
     VideoList,
-    VideoControls
+    VideoControls,
+    ProfileSetup
   },
   data: () => ({
 
