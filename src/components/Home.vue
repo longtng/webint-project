@@ -18,7 +18,7 @@
 			<img src="../assets/waffle.jpg">
 		</slide>
 	</carousel>
-	
+
 	<div class="top-categories">
 	<h2>Top Categories</h2>
 	<div class="row" >
@@ -30,7 +30,7 @@
 		</div>
 	</div>
 	</div>
-	
+
 	<div class="trend-recipes">
 	<h2>Trending Recipes</h2>
 	<div class="row" >
@@ -55,14 +55,14 @@ export default {
   },
   data: () => ({
 	categories:["Cat1", "Cat2", "Cat3", "Cat", "2" ]
-   
+
   }),
   computed: {
   },
   methods: {
 
   }
- 
+
 }
 </script>
 
@@ -83,7 +83,7 @@ export default {
 	.category-item {
 		padding: 10px;
 	}
-	
+
 	.recipe-item {
 		padding: 10px;
 	}
@@ -92,7 +92,7 @@ export default {
 		height: 200px;
 		object-fit: cover;
 	}
-	
-	
-  
+
+
+
 </style>

@@ -22,6 +22,7 @@ import VideoChild from './components/VideoChild.vue';
 import VideoList from './components/VideoList.vue';
 import VideoControls from './components/Controls.vue';
 
+
 export default {
   name: 'app',
   components: {
