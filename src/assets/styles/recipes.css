@@ -54,3 +54,22 @@ li p {
 span {
   position: absolute;
 }
+
+.Ingredients{
+  position: relative;
+  right:35%;
+  font-size: 45px;
+}
+
+.Tools{
+  position: relative;
+  right:35%;
+  font-size: 45px;
+}
+
+.Instructions{
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  font-size: 45px;
+}
