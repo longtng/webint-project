@@ -11,7 +11,7 @@
     <div class="overviewRecipe">
 
       <div>
-        <carousel :per-page="1" id="carrousselRecipe">
+        <carousel :per-page="1" class="carrousselRecipe">
           <slide>
             <img src="../assets/waffle.jpg">
           </slide>
@@ -33,13 +33,15 @@
 
       <div class="informationsRecipe">
         <ol>
-          <li><img src="../assets/timer.png" height="42" width="42"><p>prep time : 50min</p></li>
-          <li><img src="../assets/calories.png" height="42" width="42"><p>Calories</p></li>
-          <li><img src="../assets/people.jpg" height="42" width="42"><p>Serving</p></li>
+          <li><img src="../assets/timer.png" height="42" width="42"><p>prep time : {{time}}</p></li>
+          <li><img src="../assets/calories.png" height="42" width="42"><p>Calories : {{calories}}</p></li>
+          <li><img src="../assets/people.jpg" height="42" width="42"><p>Serving : {{serving}}</p></li>
         </ol>
       </div>
 
     </div>
+
+    <div class="texte">
 
 
     <div class="Ingredients">
@@ -51,6 +53,16 @@
       </ul>
     </div>
 
+    <div class="Instructions">
+      <h3>Instructions</h3>
+      <ul class="uling">
+        <li v-for='instr in Instructions'>
+          {{instr}}
+        </li>
+      </ul>
+    </div>
+
+
     <div class="Tools">
       <h3>cooking tools</h3>
       <ul>
@@ -59,17 +71,8 @@
         </li>
       </ul>
     </div>
-
-
-    <div class="Instructions">
-      <h3>Instructions</h3>
-      <ul>
-        <li v-for='instr in Instructions'>
-          {{instr}}
-        </li>
-      </ul>
     </div>
-    <button v-on:click="test()">test</button>
+
   </div>
 
 </template>
@@ -102,6 +105,10 @@ export default {
                 starHeight: 10
             }
         },
+        time: "30min",
+        calories: "2000",
+        serving: "3 people",
+
         Ingredients : [
           "30g butter",
           "100g of sugar",
@@ -123,12 +130,6 @@ export default {
   computed: {
   },
   methods: {
-    test:function(){
-    /* Grab the necessary DOM elements */
-      var r = this.$refs["myRating"];
-      r.config=this.config;
-      console.log(this.config.rating)
-    }
 
   }
 
