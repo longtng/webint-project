@@ -15,8 +15,9 @@
 .carrousselRecipe{
   display: block;
   position: relative;
-  width: 100%;
+  width: 30%;
   top : 10%;
+  left: 35%;
 }
 
 .ratingRecipe{
@@ -29,9 +30,9 @@
 
 .informationsRecipe {
   position: absolute;
-  width: 900px;
+  width: 10%;
   margin: 10px;
-  left: 1000px;
+  left: 65%;
   top:0;
 }
 
@@ -73,6 +74,8 @@
   font-size: 25px;
 }
 ul > li {
+  position: relative;
+  height: 5%;
   margin: .5em 0;
   line-height: 1.15;
 }
@@ -92,4 +95,19 @@ li p {
   font: 12px/1.5 Helvetica, sans-serif;
   padding-left: 60px;
   color: #555;
+}
+
+.icone {
+  position: relative;
+  height: 25px;
+  width: 25px;
+}
+
+.star-container {
+    position: relative;
+    height: 50px;
+    width: 50px;
+}
+#app{
+  max-width: 100%;
 }

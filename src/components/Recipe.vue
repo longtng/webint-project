@@ -27,15 +27,13 @@
         </carousel>
       </div>
 
-      <div class="ratingRecipe">
-          Rating :  <star-rating :config="config" ref="myRating"></star-rating>
-      </div>
 
       <div class="informationsRecipe">
         <ol>
-          <li><img src="../assets/timer.png" height="42" width="42"><p>prep time : {{time}}</p></li>
-          <li><img src="../assets/calories.png" height="42" width="42"><p>Calories : {{calories}}</p></li>
-          <li><img src="../assets/people.jpg" height="42" width="42"><p>Serving : {{serving}}</p></li>
+          <li><img src="../assets/timer.png" class="icone"><p>prep time : {{time}}</p></li>
+          <li><img src="../assets/calories.png" class="icone"><p>Calories : {{calories}}</p></li>
+          <li><img src="../assets/people.jpg" class="icone"><p>Serving : {{serving}}</p></li>
+          <li><p>Rating : <star-rating :config="config" ref="myRating"></star-rating></p></li>
         </ol>
       </div>
 
@@ -102,7 +100,7 @@ export default {
                 fullStarColor: '#ed8a19',
                 emptyStarColor: '#737373',
                 starWidth: 10,
-                starHeight: 10
+                starHeight: 10,
             }
         },
         time: "30min",
