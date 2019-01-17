@@ -111,3 +111,13 @@ li p {
 #app{
   max-width: 100%;
 }
+
+.suggestions img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.category-item {
+  padding: 10px;
+}
