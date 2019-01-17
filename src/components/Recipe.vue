@@ -6,36 +6,25 @@
 
 
     <search-bar></search-bar>
-
+    <h3>{{recipeName}}</h3>
 
     <div class="overviewRecipe">
 
       <div>
         <carousel :per-page="1" class="carrousselRecipe">
-          <slide>
-            <img src="../assets/waffle.jpg">
-          </slide>
-          <slide>
-            <img src="../assets/cookie.jpg">
-          </slide>
-          <slide>
-            <img src="../assets/cookie.jpg">
-          </slide>
-            <slide>
-            <img src="../assets/waffle.jpg">
+          <slide v-for='image in images' :key="image.path">
+            <img :src="image.path">
           </slide>
         </carousel>
       </div>
 
-      <div class="ratingRecipe">
-          Rating :  <star-rating :config="config" ref="myRating"></star-rating>
-      </div>
 
       <div class="informationsRecipe">
         <ol>
-          <li><img src="../assets/timer.png" height="42" width="42"><p>prep time : {{time}}</p></li>
-          <li><img src="../assets/calories.png" height="42" width="42"><p>Calories : {{calories}}</p></li>
-          <li><img src="../assets/people.jpg" height="42" width="42"><p>Serving : {{serving}}</p></li>
+          <li><img src="../assets/timer.png" class="icone"><p>prep time : {{time}}</p></li>
+          <li><img src="../assets/calories.png" class="icone"><p>Calories : {{calories}}</p></li>
+          <li><img src="../assets/people.jpg" class="icone"><p>Serving : {{serving}}</p></li>
+          <li><p>Rating : <star-rating v-model="rating"></star-rating></p></li>
         </ol>
       </div>
 
@@ -73,6 +62,19 @@
     </div>
     </div>
 
+
+    <div class="suggestions">
+      <h2>You may also like...</h2>
+      <div class="row" >
+        <div v-for="recipe in otherRecipes">
+          <div class="category-item">
+            <img src="../assets/waffle.jpg">
+            <p>Name</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </template>
@@ -86,7 +88,7 @@
 
 <script>
 import SearchBar from './SearchBar.vue';
-import StarRating from 'vue-dynamic-star-rating';
+import StarRating from 'vue-star-rating'
 
 export default {
   name: 'app',
@@ -96,18 +98,12 @@ export default {
   },
   data: function() {
       return {
-    config: {
-            rating: 2,
-            style: {
-                fullStarColor: '#ed8a19',
-                emptyStarColor: '#737373',
-                starWidth: 10,
-                starHeight: 10
-            }
-        },
+        otherRecipes:["Cat1", "Cat2", "Cat3", "Cat", "2" ],
+        recipeName:"The best chocolate cookies",
         time: "30min",
         calories: "2000",
         serving: "3 people",
+        rating: 3,
 
         Ingredients : [
           "30g butter",
@@ -124,7 +120,9 @@ export default {
         "Do something else",
         "put what you did in the oven for 30min",
         "eat"
-        ]
+        ],
+        images:[{path:"../assets/waffle.jpg"},{path:"../assets/cookie.jpg"}]
+
   }
 },
   computed: {
