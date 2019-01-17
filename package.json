@@ -15,7 +15,7 @@
     "vue": "^2.5.17",
     "vue-carousel": "^0.17.0",
     "vue-multiselect": "^2.1.3",
-    "vue-router": "^3.0.2"
+    "vue-router": "^3.0.2",
     "vue-dynamic-star-rating": "^1.0.7",
     "vue-star-rating": "^1.6.1"
   },
