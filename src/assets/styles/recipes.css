@@ -1,0 +1,95 @@
+.greeting {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.overviewRecipe{
+  position: relative;
+  top:0;
+  width: 2000px;
+}
+
+.carrousselRecipe{
+  display: block;
+  position: relative;
+  width: 100%;
+  top : 10%;
+}
+
+.ratingRecipe{
+  position: absolute;
+  width: 900px;
+  margin: 10px;
+  left: 1000px;
+  top:400px;
+}
+
+.informationsRecipe {
+  position: absolute;
+  width: 900px;
+  margin: 10px;
+  left: 1000px;
+  top:0;
+}
+
+.Ingredients{
+  text-align: left;
+  position: relative;
+  left: 0%;
+  width: 30%;
+  padding : 10px;
+}
+
+.Tools{
+  text-align: left;
+  position: relative;
+  bottom: 37%;
+  left: 0%;
+  padding: 10px;
+}
+
+.Instructions{
+  display: block;
+  text-align: left;
+  position: relative;
+  bottom: 37%;
+  left:50%;
+  width: 30%;
+  padding :10px;
+}
+
+.uling {
+  list-style-type: decimal;
+  width: 900px;
+  margin: 50;
+}
+
+.texte{
+  display: block;
+  width: 80%;
+  font-size: 25px;
+}
+ul > li {
+  margin: .5em 0;
+  line-height: 1.15;
+}
+
+ol {
+  color: #ccc;
+  list-style-type: none;
+}
+
+ol li {
+  position: relative;
+  font: bold italic 45px/1.5 Helvetica, Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+li p {
+  font: 12px/1.5 Helvetica, sans-serif;
+  padding-left: 60px;
+  color: #555;
+}
