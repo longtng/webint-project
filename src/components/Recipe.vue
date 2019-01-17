@@ -1,10 +1,16 @@
 <template lang="html">
   <div class="greeting">
-    <h2>
-      The Recipes
-    </h2>
+  	<a href=#/>
+      <h2>
+        The Recipes
+      </h2>
+    </a>
 
+    <div class="User">
+      <a href="#/profile">LOGIN</a>
+    </div>
 
+    
     <search-bar></search-bar>
     <h3>{{recipeName}}</h3>
 

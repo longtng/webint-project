@@ -121,3 +121,10 @@ li p {
 .category-item {
   padding: 10px;
 }
+
+.User{
+  position: absolute;
+  text-align: left;
+  top:30%;
+  left: 0;
+}
