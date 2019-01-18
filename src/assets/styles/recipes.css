@@ -53,6 +53,7 @@
   left: 0%;
   padding: 10px;
   background: #CD853F;
+  width: 30%;
 }
 
 .Instructions{
@@ -61,7 +62,7 @@
   position: relative;
   bottom: 37%;
   left:50%;
-  width: 30%;
+  width: 45%;
   padding :10px;
   background: #CD853F;
 }
