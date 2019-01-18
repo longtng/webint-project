@@ -10,7 +10,7 @@
       <a href="#/profile">LOGIN</a>
     </div>
 
-    
+
     <search-bar></search-bar>
     <h3>{{recipeName}}</h3>
 
@@ -18,12 +18,20 @@
 
       <div>
         <carousel :per-page="1" class="carrousselRecipe">
-          <slide v-for='image in images' :key="image.path">
-            <img :src="image.path">
-          </slide>
-        </carousel>
+        <slide>
+          <img src="../assets/waffle.jpg">
+        </slide>
+        <slide>
+          <img src="../assets/cookie.jpg">
+        </slide>
+        <slide>
+          <img src="../assets/cookie.jpg">
+        </slide>
+          <slide>
+          <img src="../assets/waffle.jpg">
+        </slide>
+      </carousel>
       </div>
-
 
       <div class="informationsRecipe">
         <ol>

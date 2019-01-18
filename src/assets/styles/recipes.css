@@ -9,7 +9,7 @@
 .overviewRecipe{
   position: relative;
   top:0;
-  width: 2000px;
+  width: 200%;
 }
 
 .carrousselRecipe{
@@ -17,7 +17,7 @@
   position: relative;
   width: 30%;
   top : 10%;
-  left: 35%;
+  left: 25%;
 }
 
 .ratingRecipe{
@@ -30,10 +30,11 @@
 
 .informationsRecipe {
   position: absolute;
-  width: 10%;
+  width: 15%;
   margin: 10px;
-  left: 65%;
+  left: 55%;
   top:0;
+  background: #CD853F;
 }
 
 .Ingredients{
@@ -42,6 +43,7 @@
   left: 0%;
   width: 30%;
   padding : 10px;
+  background: #CD853F;
 }
 
 .Tools{
@@ -50,6 +52,7 @@
   bottom: 37%;
   left: 0%;
   padding: 10px;
+  background: #CD853F;
 }
 
 .Instructions{
@@ -60,6 +63,7 @@
   left:50%;
   width: 30%;
   padding :10px;
+  background: #CD853F;
 }
 
 .uling {
@@ -73,6 +77,8 @@
   width: 80%;
   font-size: 25px;
 }
+
+
 ul > li {
   position: relative;
   height: 5%;
@@ -127,4 +133,8 @@ li p {
   text-align: left;
   top:30%;
   left: 0;
+}
+
+.content{
+  background-image: url("../../assets/logoModif.jpeg"),url("../../assets/logo2.jpeg");
 }
