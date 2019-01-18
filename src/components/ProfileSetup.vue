@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="app">
+  <div id="profile">
     <tab :tabtitles="tabtitles" 
     :current-page="3">
     <div class="tab-content-container">
@@ -155,13 +155,12 @@
     margin: 0px auto;
   }
 
-  #app {
+  #profile {
     color: #2c3e50;
     margin-top: 50px;
     max-width: 500px;
     width: 100%;
     font-family: Source Sans Pro, Helvetica, sans-serif;
-    /*text-align: center;*/
     margin: 0 auto
   }
 

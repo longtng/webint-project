@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
   <div >
     <h2>
       Recipe
@@ -40,7 +40,8 @@
 		<div v-for="cat in categories">
 			<div class="recipe-item">
 				<img src="../assets/waffle.jpg">
-				<p>Content</p>
+				<p class="title">Delicious waffle</p>
+				<p class="desc">This Classic Waffle Recipe makes perfectly crisp waffles with fluffy insides that are to die for! Made with simple ingredients you already have.</p>
 			</div>
 		</div>
 	</div>
@@ -70,13 +71,6 @@ export default {
 </script>
 
 <style>
-  .greeting {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-  }
   .top-categories img {
 		width: 100px;
 		height: 100px;
@@ -89,13 +83,19 @@ export default {
 
 	.recipe-item {
 		padding: 10px;
+		width: 300px;
 	}
 	.recipe-item img {
 	    width: 300px;
 		height: 200px;
 		object-fit: cover;
 	}
-
-
+	.recipe-item .title {
+		font-weight: bold;
+	}
+	.recipe-item .desc {
+		text-align: justify;
+    	font-size: 0.8em;
+	}
 
 </style>

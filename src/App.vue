@@ -2,16 +2,15 @@
   <div id="app">
     <header class="banner">
       <div class="container row center">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Eurecom.svg/2000px-Eurecom.svg.png" alt="Eurecom Logo">
+        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Eurecom.svg/2000px-Eurecom.svg.png" alt="Eurecom Logo"> -->
         <span>WebInt Project</span>
       </div>
     </header>
-    <div class="content">
-   </div>
 
-   <main class="content">
-	<router-view></router-view>
-	</main>
+   <div class="content">
+	   <router-view></router-view>
+	 </div>
+   
 
  </div>
 
