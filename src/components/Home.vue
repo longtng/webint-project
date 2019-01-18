@@ -5,39 +5,55 @@
       The Recipes
     </h1>
 
-    <router-link to="/recipe">Go to Recipe</router-link><br>
-    <!-- <router-link to="/profile">Go to Profile</router-link> -->
 	<search-bar id="home-search-bar"></search-bar>
     <carousel :per-page="3" class="carousel-home" :autoplay="true" :loop="true" :autoplayTimeout="3000">
 		<slide>
+			<router-link to="/recipe">
 			<img src="https://ichef.bbci.co.uk/images/ic/1280xn/p060z50q.jpg">
+			</router-link>
 		</slide>
 		<slide>
+			<router-link to="/recipe">
 			<img src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/pennealarrabiatapast_83813_16x9.jpg">
+			</router-link>
 		</slide>
 		<slide>
+			<router-link to="/recipe">
 			<img src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/cumberland_sausage_59571_16x9.jpg">
+			</router-link>
 		</slide>
 		<slide>
+			<router-link to="/recipe" title="">
 			<img src="https://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/waffles_82356_16x9.jpg">
+			</router-link>
 		</slide>
 		<slide>
+			<router-link to="/recipe">
 			<img src="https://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/spaghettivongole_88988_16x9.jpg">
+			</router-link>
 		</slide>
 		<slide>
+			<router-link to="/recipe">
 			<img src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/cumberland_sausage_59571_16x9.jpg">
+			</router-link>
 		</slide>
 		<slide>
+			<router-link to="/recipe">
 			<img src="https://ichef.bbci.co.uk/food/ic/food_16x9_448/recipes/smokedsalmonandpotat_90568_16x9.jpg">
+			</router-link>
 		</slide>
 		<slide>
+			<router-link to="/recipe">
 			<img src="https://ichef.bbci.co.uk/food/ic/food_16x9_448/recipes/christmas_roast_duck_83066_16x9.jpg">
+			</router-link>
 		</slide>
 		<slide>
+			<router-link to="/recipe">
 			<img src="https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/membrillo_and_stilton_28987_16x9.jpg">
+			</router-link>
 		</slide>
 	</carousel>
-
+<br><br>
 	<div class="top-categories">
 	<h2>Top Categories</h2>
 	<div class="row" >
@@ -50,6 +66,7 @@
 	</div>
 	</div>
 
+	<br><br>
 	<div class="trend-recipes">
 	<h2>Trending Recipes</h2>
 	<div class="row" >
@@ -101,7 +118,7 @@ export default {
 	}],
 	items: [{
 		title:"Chicken Curry",
-		description: "From classic chicken tikka masala to Thai green curry, take a tour of global flavours with BBC Food's top curry recipes. Take on your takeaway and spice up suppertime with our favourite chicken jalfrezi, chicken korma, Japanese katsu curry or quick coconut chilli chicken.",
+		description: "From classic chicken tikka masala to Thai green curry. Take on your takeaway and spice up suppertime with our favourite chicken jalfrezi, chicken korma, Japanese katsu curry or quick coconut chilli chicken.",
 		img:"https://ichef.bbci.co.uk//food/ic/food_16x9_832/recipes/chickenjalfrezi_91772_16x9.jpg"
 	},
 	{
@@ -197,5 +214,16 @@ export default {
 		max-width: 1000px;
 		margin: auto;
 	}
+	  button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    /*border-radius: 4px;*/
+    resize: vertical;
+    width: 60px; 
+    margin-top: 10px;
+    cursor:pointer;
+    background-color: #d6d6d6
+
+  }
 
 </style>

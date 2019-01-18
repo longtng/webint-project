@@ -1,5 +1,5 @@
 <template lang="html">
-  <div id="profile">
+  <div id="app1">
     <tab :tabtitles="tabtitles" 
     :current-page="3">
     <div class="tab-content-container">
@@ -155,12 +155,13 @@
     margin: 0px auto;
   }
 
-  #profile {
+  #app1 {
     color: #2c3e50;
     margin-top: 50px;
     max-width: 500px;
     width: 100%;
     font-family: Source Sans Pro, Helvetica, sans-serif;
+    /*text-align: center;*/
     margin: 0 auto
   }
 
@@ -190,7 +191,7 @@ input[type=text], input[type=password], select, textarea {
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit], input[type=reset] {
+input[type=submit], input[type=reset]  {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;

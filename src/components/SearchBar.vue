@@ -28,7 +28,7 @@ export default {
   	selected: String
   },
   data: () => ({
-	options:["Cat1", "Cat2", "Cat3", "Cat", "2" ]
+	options:["Cookie", "Waffle", "Italian", "Vegetarian", "Vegan", "Low-sugar", "American", "British", "Chocolate", "Chips" ]
   }),
 }
 </script>

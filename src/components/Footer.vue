@@ -2,12 +2,13 @@
   <div>
    <footer>
    		<div class="topics row">
-   			<div v-for="i in [1,2,3,4]" class="topic ">
-   				<h4>Topic {{i}}</h4>
-   				<a href="#">Secondary Link</a><br>
-   				<a href="#">Secondarysss Link</a><br>
-   				<a href="#">Secondary Link</a><br>
-   				<a href="#">Secondary Link</a><br>
+   			<div v-for="t in topics" class="topic ">
+   				<h4>{{t.title}}</h4>
+   				<div v-for="t in t.links">
+   					<a href="#">{{t}}</a>
+   				</div>
+
+   		
    			</div>
    			<div class="signup">
    				<h4>Sign up</h4>
@@ -45,6 +46,24 @@
 export default {
   data: () => ({
     message:"",
+    topics: [
+    {
+    	title:"Cuisines",
+    	links: ["American", "British", "Italian", "Mexican"]
+    },
+    {
+    	title: "Ocasion",
+    	links: ["Easter", "Halloween", "Christmas", "Hanukkah"]
+    },
+    {
+    	title: "Diets",
+    	links: ["Vegan", "Gluten free", "Vegetarian", "Low-sugar"]
+    },
+    {
+    	title: "Ingredients",
+    	links: ["Baking powder", "Ricotta", "Flour tortilla", "Egg"]
+    }
+    ]
   }),
 
 }

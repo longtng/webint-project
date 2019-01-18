@@ -34,7 +34,7 @@
   margin: 10px;
   left: 55%;
   top:0;
-  background: #CD853F;
+  /*background: #CD853F;*/
 }
 
 .Ingredients{
@@ -43,7 +43,7 @@
   left: 0%;
   width: 30%;
   padding : 10px;
-  background: #CD853F;
+  /*background: #CD853F;*/
 }
 
 .Tools{
@@ -52,7 +52,7 @@
   bottom: 37%;
   left: 0%;
   padding: 10px;
-  background: #CD853F;
+  /*background: #CD853F;*/
   width: 30%;
 }
 
@@ -64,7 +64,7 @@
   left:50%;
   width: 45%;
   padding :10px;
-  background: #CD853F;
+  /*background: #CD853F;*/
 }
 
 .uling {

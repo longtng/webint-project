@@ -5,27 +5,27 @@
         The Recipes
       </h2>
     </a>
-
+<!-- 
     <div class="User">
       <a href="#/profile">LOGIN</a>
-    </div>
+    </div> -->
 
 
-    <search-bar></search-bar>
-    <h3>{{recipeName}}</h3>
+    <!-- <search-bar></search-bar> -->
+    <br>
+    <h2>{{title}}</h2>
+    <br>
 
     <div class="overviewRecipe">
 
       <div>
         <carousel :per-page="1" class="carrousselRecipe">
+        
         <slide>
-          <img src="../assets/waffle.jpg">
+          <img :src="imgSrc">
         </slide>
         <slide>
-          <img src="../assets/cookie.jpg">
-        </slide>
-        <slide>
-          <img src="../assets/cookie.jpg">
+          <img :src="imgSrc">
         </slide>
           <slide>
           <img src="../assets/waffle.jpg">
@@ -143,6 +143,16 @@ export default {
   },
   methods: {
 
+  },
+  props: {
+    title: {
+      default: "Waffle",
+      type: String,
+    },
+    imgSrc: {
+      default: "https://ichef.bbci.co.uk/food/ic/food_16x9_832/recipes/waffles_82356_16x9.jpg",
+      type: String
+    }
   }
 
 }
