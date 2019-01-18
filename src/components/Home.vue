@@ -46,16 +46,19 @@
 		</div>
 	</div>
 	</div>
+	<custom-footer></custom-footer>
   </div>
 </template>
 
 <script>
 import SearchBar from './SearchBar.vue';
+import CustomFooter from './Footer.vue';
 
 export default {
   name: 'app',
   components: {
-	SearchBar
+	SearchBar,
+	CustomFooter
   },
   data: () => ({
 	categories:["Cat1", "Cat2", "Cat3", "Cat", "2" ]

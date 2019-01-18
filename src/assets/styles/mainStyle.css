@@ -43,7 +43,7 @@ header img {
   padding-top: 70px;
 }
 
-footer {
+/*footer {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -55,7 +55,7 @@ footer {
 }
 footer p {
   margin-left:10px;
-}
+}*/
 
 main {
     padding: 30px;
