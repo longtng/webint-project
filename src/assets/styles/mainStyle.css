@@ -26,6 +26,12 @@ header span {
     font-family: Chalkduster, fantasy
 }
 
+header div {
+      text-align: left;
+    /* justify-content: left; */
+    width: 90%;
+}
+
 header img {
   height: 35px;
   /*position: absolute;*/

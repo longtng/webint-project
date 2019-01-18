@@ -13,11 +13,13 @@
     "@chenfengyuan/vue-carousel": "^0.1.1",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
+    "v-autocomplete": "^1.8.2",
     "vue": "^2.5.22",
     "vue-carousel": "^0.17.0",
     "vue-dynamic-star-rating": "^1.0.7",
     "vue-multiselect": "^2.1.3",
     "vue-router": "^3.0.2",
+    "vue-single-select": "^1.0.29",
     "vue-star-rating": "^1.6.1"
   },
   "devDependencies": {

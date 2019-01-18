@@ -1,13 +1,14 @@
 <template>
-  <div >
-    <h2>
-      Recipe
-    </h2>
+  <div>
+  	<div class="home-content">
+    <h1>
+      The Recipes
+    </h1>
 
-    <router-link to="/recipe">Go to Recipe</router-link><br>
-    <router-link to="/profile">Go to Profile</router-link>
-	<search-bar></search-bar>
-    <carousel :per-page="1">
+    <!-- <router-link to="/recipe">Go to Recipe</router-link><br> -->
+    <!-- <router-link to="/profile">Go to Profile</router-link> -->
+	<search-bar id="home-search-bar"></search-bar>
+    <carousel :per-page="3" class="carousel-home" autoplay="true" loop="true" autoplayTimeout="3000">
 		<slide>
 			<img src="../assets/waffle.jpg">
 		</slide>
@@ -44,6 +45,7 @@
 				<p class="desc">This Classic Waffle Recipe makes perfectly crisp waffles with fluffy insides that are to die for! Made with simple ingredients you already have.</p>
 			</div>
 		</div>
+	</div>
 	</div>
 	</div>
 	<custom-footer></custom-footer>
@@ -99,6 +101,17 @@ export default {
 	.recipe-item .desc {
 		text-align: justify;
     	font-size: 0.8em;
+	}
+	.trend-recipes .row {
+		max-width: 1000px;
+	}
+	.carousel-home img {
+		object-fit: cover;
+    	height: 300px;
+	}
+	.home-content {
+		max-width: 1000px;
+		margin: auto;
 	}
 
 </style>

@@ -87,6 +87,9 @@ export default {
 		background: #e0e0e0;
     	overflow: auto;
 	}
+	footer {
+		padding-top: 50px;
+	}
 
 
 </style>

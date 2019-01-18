@@ -1,9 +1,11 @@
 <template>
   <div id="app">
     <header class="banner">
-      <div class="container row center">
+      <div class="container row">
         <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Eurecom.svg/2000px-Eurecom.svg.png" alt="Eurecom Logo"> -->
-        <span>WebInt Project</span>
+        <div>The Recipes </div>  
+        <router-link to="/profile">Login</router-link>
+
       </div>
     </header>
 
