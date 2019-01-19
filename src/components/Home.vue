@@ -23,7 +23,7 @@
 			</router-link>
 		</slide>
 		<slide>
-			<router-link to="/recipe" title="">
+			<router-link to="/recipe">
 			<img src="https://ichef.bbci.co.uk/food/ic/food_16x9_320/recipes/waffles_82356_16x9.jpg">
 			</router-link>
 		</slide>
@@ -72,9 +72,11 @@
 	<div class="row" >
 		<div v-for="item in items">
 			<div class="recipe-item">
-				<img :src="item.img">
-				<p class="title">{{item.title}}</p>
-				<p class="desc">{{item.description}}</p>
+				<router-link to="/recipe">
+					<img :src="item.img">
+					<p class="title">{{item.title}}</p>
+					<p class="desc">{{item.description}}</p>
+				</router-link>
 			</div>
 		</div>
 	</div>
