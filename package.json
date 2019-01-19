@@ -8,11 +8,10 @@
     "start": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
-    
-    
   },
   "dependencies": {
     "@chenfengyuan/vue-carousel": "^0.1.1",
+    "express": "^4.16.4",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "v-autocomplete": "^1.8.2",
